@@ -9,7 +9,7 @@ pipeline {
             steps {
                     sh 'pwd'
                     sh 'ls'
-                    sh 'mvn  clean install package'
+                    sh 'mvn clean install'
             }
         }
 
