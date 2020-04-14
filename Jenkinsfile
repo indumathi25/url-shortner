@@ -10,6 +10,9 @@ pipeline {
                     sh 'pwd'
                     sh 'ls'
                     sh 'whoami'
+                    sh 'export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.242.b08-0.50.amzn1.x86_64/jre'
+                    sh 'export PATH=$PATH:$JAVA_HOME'
+
                     sh 'mvn clean install'
             }
         }
