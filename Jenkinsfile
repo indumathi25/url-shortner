@@ -9,6 +9,7 @@ pipeline {
             steps {
                     sh 'pwd'
                     sh 'ls'
+                    sh 'whoami'
                     sh 'mvn clean install'
             }
         }
